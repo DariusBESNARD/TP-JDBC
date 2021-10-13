@@ -40,7 +40,7 @@ public class Controleur {
             Repository rep2 = new Repository(stmt2);
 
             //Récupération des résultats du requête du modèle
-            String req1 = "SELECT * FROM candidat";
+            String req1 = ("SELECT dateEmbauche FROM salarie WHERE dateEmbauche <"+ a);
             String req2 = "SELECT  nom, prenoms, libelle FROM candidat c INNER JOIN specialite s ON c.idSpec = s.idSpec";
 
             //Lancement des requêtes et récupération des résultats
